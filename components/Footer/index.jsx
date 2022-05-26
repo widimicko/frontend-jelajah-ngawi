@@ -13,37 +13,50 @@ const Footer = () => {
   return (
     <footer className="bg-off-white py-4">
       <div className="container">
-        <div className={`d-flex justify-content-center`}>
+        <div className="d-flex justify-content-center mb-4">
           <Image src={logo} alt="logo" />
         </div>
         <div className="w-75 mx-auto text-center">
           <p className="text-secondary fs-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam at
-            consequatur repellendus? Ut, dicta! Voluptatibus, vero nisi! Minus
-            rem, fugiat at illum nisi eius perferendis fugit debitis,
-            dignissimos
+            <b>Ngawi</b>, tempat yang menjadi destinasi wisata untuk dikunjungi
+            sebagai liburan. Anda dapat menemukan kulineran, liburan, hiburan,
+            belanja, dan semua aktivitas lainnya tanpa perlu meninggalkan Alam.
           </p>
-          <span className="fs-1 text-secondary">
-            <i className="bi bi-facebook"></i>
-            <i className="bi bi-twitter"></i>
-            <i className="bi bi-instagram"></i>
-            <i className="bi bi-github"></i>
-          </span>
+          <div className="d-flex justify-content-center gap-4 fs-1">
+            <a href="#" className="text-secondary">
+              <i className="bi bi-facebook"></i>
+            </a>
+            <a href="#" className="text-secondary">
+              <i className="bi bi-twitter"></i>
+            </a>
+            <a href="#" className="text-secondary">
+              <i className="bi bi-instagram"></i>
+            </a>
+            <a href="#" className="text-secondary">
+              <i className="bi bi-github"></i>
+            </a>
+          </div>
         </div>
         <hr />
         <div
           className="d-flex gap-4 align-items-center justify-content-center"
           style={{ overflowX: "auto" }}
         >
-          <Image
-            src={ngawi}
-            alt="kabupaten ngawi"
-            loading="lazy"
-            className="img-fluid"
-            height={600}
-            width={650}
-            placeholder="blur"
-          />
+          <a
+            href="http://ngawikab.go.id"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src={ngawi}
+              alt="kabupaten ngawi"
+              loading="lazy"
+              className="img-fluid"
+              height={600}
+              width={650}
+              placeholder="blur"
+            />
+          </a>
           <Image
             src={ngawiRamah}
             alt="ngawi ramah"
@@ -53,22 +66,34 @@ const Footer = () => {
             width={1200}
             placeholder="blur"
           />
-          <Image
-            src={wonderfullIndonesia}
-            alt="wonderfull indonesia"
-            loading="lazy"
-            className="img-fluid"
-            height={600}
-            placeholder="blur"
-          />
-          <Image
-            src={smartInotek}
-            alt="smart inotek"
-            loading="lazy"
-            className="img-fluid"
-            height={600}
-            placeholder="blur"
-          />
+          <a
+            href="http://indonesia.travel"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src={wonderfullIndonesia}
+              alt="wonderfull indonesia"
+              loading="lazy"
+              className="img-fluid"
+              height={600}
+              placeholder="blur"
+            />
+          </a>
+          <a
+            href="http://prodi.vokasi.uns.ac.id/psdku-tekinfo/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src={smartInotek}
+              alt="smart inotek"
+              loading="lazy"
+              className="img-fluid"
+              height={600}
+              placeholder="blur"
+            />
+          </a>
         </div>
         <hr />
         <div className="py-4 d-flex flex-wrap gap-4 justify-content-center text-secondary fs-5">
