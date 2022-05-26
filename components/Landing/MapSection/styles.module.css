@@ -1,0 +1,23 @@
+.forest {
+  background-image: url("../../../public/assets/images/background/forest.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem 0;
+}
+
+.mapContainer {
+  height: 500px;
+  position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  .mapContainer {
+    height: 320px;
+  }
+}
+
+.mapComponent {
+  position: absolute;
+  bottom: -120px;
+  left: 12%;
+}

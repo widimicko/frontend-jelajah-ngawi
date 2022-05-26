@@ -1,0 +1,21 @@
+.hero {
+  background-image: url("../../../public/assets/images/background/gerbang-alun-alun.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem 0;
+}
+
+.heroTextHeading {
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 90px;
+  letter-spacing: -0.025em;
+}
+
+.heroTextParagraph {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.025em;
+  margin-bottom: 30px;
+}
