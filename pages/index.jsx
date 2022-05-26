@@ -1,7 +1,6 @@
 import Head from "next/head";
 
 import Navbar from "@components/Navbar";
-import styles from "../styles/home.module.css";
 
 import HeroSection from "@components/Landing/HeroSection";
 import MapSection from "@components/Landing/MapSection";
