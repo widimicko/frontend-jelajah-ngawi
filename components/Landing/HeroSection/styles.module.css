@@ -1,5 +1,6 @@
 .hero {
-  background-image: url("../../../public/assets/images/background/gerbang-alun-alun.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../../public/assets/images/background/gerbang-alun-alun.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 2rem 0;

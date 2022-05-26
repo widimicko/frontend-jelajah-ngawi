@@ -1,9 +1,13 @@
+import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
 
+import styles from "./styles.module.css";
 import logo from "@assets/images/logo.png";
 
 const Navbar = () => {
+  const router = useRouter();
+
   return (
     <nav className="navbar p-2 navbar-expand-lg navbar-light bg-off-white shadow">
       <div className="container">
@@ -34,9 +38,9 @@ const Navbar = () => {
             <li className="nav-item">
               <Link href={"/"}>
                 <a
-                  className="nav-link"
-                  style={{ fontSize: "20px", fontWeight: 500 }}
-                  aria-current="page"
+                  className={`nav-link ${styles.fontNav} ${
+                    router.pathname == "/" ? "text-primary" : ""
+                  }`}
                 >
                   Beranda
                 </a>
@@ -45,8 +49,9 @@ const Navbar = () => {
             <li className="nav-item">
               <Link href={"/news"}>
                 <a
-                  className="nav-link"
-                  style={{ fontSize: "20px", fontWeight: 500 }}
+                  className={`nav-link ${styles.fontNav} ${
+                    router.pathname == "/news" ? "text-primary" : ""
+                  }`}
                 >
                   Berita
                 </a>
@@ -55,12 +60,8 @@ const Navbar = () => {
             <li className="nav-item">
               <Link href={"/explore"}>
                 <a
-                  className="nav-link rounded-pill text-primary text-center"
-                  style={{
-                    fontSize: "20px",
-                    fontWeight: 500,
-                    border: "3px solid #B8603C",
-                  }}
+                  className={`nav-link ${styles.fontNav} px-3 rounded-pill text-primary text-center`}
+                  style={{ border: "3px solid #B8603C" }}
                 >
                   Go Explore
                 </a>

@@ -25,8 +25,10 @@ const HeroSection = () => {
               Kenapa harus ke Kota Ngawi?
             </p>
             <p className={styles.heroTextParagraph}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ex
-              sit sunt ad nemo quia numquam, unde quis quos quae?
+              Apakah kamu berencana liburan untuk menikmati waktu luang Anda?
+              Mencari tempat untuk menjelajah, makan, dan menikmati liburan Anda
+              bersama orang-orang terkasih? maka Ngawi menawarkan perjalanan
+              untuk anda dan mendapatkan pengalaman yang luar biasa.
             </p>
             <Link href="/explore">
               <a className="rounded-pill text-off-white px-4 text-decoration-none bg-primary py-3 fs-4">

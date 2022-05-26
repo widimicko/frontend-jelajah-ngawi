@@ -10,6 +10,12 @@
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .recommendation {
+    height: 120rem;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .recommendation {
     height: 160rem;
