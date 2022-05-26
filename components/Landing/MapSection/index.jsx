@@ -14,6 +14,7 @@ const MapSection = () => {
             style={{ border: 0 }}
             allowFullScreen=""
             loading="lazy"
+            className="rounded suad0w"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>

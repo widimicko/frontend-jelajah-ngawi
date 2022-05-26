@@ -26,8 +26,8 @@ export default function Home() {
         <MapSection />
         <DestinationSection />
         <Recommendation />
-        <Footer />
       </main>
+      <Footer />
     </div>
   );
 }

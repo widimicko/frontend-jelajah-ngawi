@@ -53,7 +53,7 @@ const Footer = () => {
               loading="lazy"
               className="img-fluid"
               height={600}
-              width={650}
+              width={750}
               placeholder="blur"
             />
           </a>
