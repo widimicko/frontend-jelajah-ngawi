@@ -1,0 +1,19 @@
+.image {
+  height: 200px;
+}
+
+.nameText {
+  font-weight: 600;
+  line-height: 44px;
+}
+
+.descriptionText {
+  font-weight: 600;
+  line-height: 29px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

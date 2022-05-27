@@ -11,7 +11,7 @@ import smartInotek from "@assets/images/logo_inotek.jpg";
 
 const Footer = () => {
   return (
-    <footer className="bg-off-white py-4">
+    <footer className="bg-off-white py-4 shadow">
       <div className="container">
         <div className="d-flex justify-content-center mb-4">
           <Image src={logo} alt="logo" />
