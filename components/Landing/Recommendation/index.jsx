@@ -13,7 +13,7 @@ const Recommendation = () => {
       <div
         className={`${styles.recommendationContainer} bg-soft-grey shadow p-4`}
       >
-        <p className="font-section-header fs-1 text-secondary text-center mb-5">
+        <p className="font-section-header fs-1 text-secondary-blue text-center mb-5">
           Tempat Yang Wajib Dikunjungi
         </p>
         <div className="row justify-content-center">

@@ -43,7 +43,7 @@ const Navbar = () => {
               <Link href={"/"}>
                 <a
                   className={`nav-link ${styles.fontNav} ${
-                    router.pathname == "/" ? "text-primary" : ""
+                    router.pathname == "/" ? "text-primary-brown" : ""
                   }`}
                 >
                   Beranda
@@ -54,7 +54,7 @@ const Navbar = () => {
               <Link href={"/news"}>
                 <a
                   className={`nav-link ${styles.fontNav} ${
-                    router.pathname == "/news" ? "text-primary" : ""
+                    router.pathname == "/news" ? "text-primary-brown" : ""
                   }`}
                 >
                   Berita
@@ -64,7 +64,7 @@ const Navbar = () => {
             <li className="nav-item">
               <Link href={"/explore"}>
                 <a
-                  className={`nav-link ${styles.fontNav} px-3 rounded-pill text-primary text-center`}
+                  className={`nav-link ${styles.fontNav} px-3 rounded-pill text-primary-brown text-center`}
                   style={{ border: "3px solid #B8603C" }}
                 >
                   Go Explore

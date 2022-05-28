@@ -28,7 +28,7 @@ const DestinationSection = () => {
               alt="tourism"
             />
             <div
-              className="card-body bg-secondary"
+              className="card-body bg-secondary-blue"
               style={{ position: "relative", padding: 0 }}
             >
               <Image
@@ -46,7 +46,7 @@ const DestinationSection = () => {
                 <Link href="/explore">
                   <a className="text-decoration-none">
                     <div className="d-flex justify-content-center align-items-center bg-soft-grey rounded-pill p-1 px-5 fs-3 text-black">
-                      <p className="fs-3" style={{ fontWeight: 600 }}>
+                      <p className="my-auto fs-3" style={{ fontWeight: 600 }}>
                         Lihat
                       </p>
                       <Image
@@ -70,7 +70,7 @@ const DestinationSection = () => {
               alt="UMKM"
             />
             <div
-              className="card-body bg-secondary"
+              className="card-body bg-secondary-blue"
               style={{ position: "relative", padding: 0 }}
             >
               <Image
@@ -88,7 +88,7 @@ const DestinationSection = () => {
                 <Link href="/explore">
                   <a className="text-decoration-none">
                     <div className="d-flex justify-content-center align-items-center bg-soft-grey rounded-pill p-1 px-5 fs-3 text-black">
-                      <p className="fs-3" style={{ fontWeight: 600 }}>
+                      <p className="my-auto fs-3" style={{ fontWeight: 600 }}>
                         Lihat
                       </p>
                       <Image
@@ -112,7 +112,7 @@ const DestinationSection = () => {
               alt="Hotel"
             />
             <div
-              className="card-body bg-secondary"
+              className="card-body bg-secondary-blue"
               style={{ position: "relative", padding: 0 }}
             >
               <Image
@@ -130,7 +130,7 @@ const DestinationSection = () => {
                 <Link href="/explore">
                   <a className="text-decoration-none">
                     <div className="d-flex justify-content-center align-items-center bg-soft-grey rounded-pill p-1 px-5 fs-3 text-black">
-                      <p className="fs-3" style={{ fontWeight: 600 }}>
+                      <p className="my-auto fs-3" style={{ fontWeight: 600 }}>
                         Lihat
                       </p>
                       <Image

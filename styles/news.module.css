@@ -1,0 +1,5 @@
+.newsSpinner {
+  background: url('../public/assets/images/spinner.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -31,7 +31,7 @@ const HeroSection = () => {
               untuk anda dan anda akan mendapatkan pengalaman yang luar biasa.
             </p>
             <Link href="/explore">
-              <a className="rounded-pill text-off-white px-4 text-decoration-none bg-primary py-3 fs-4">
+              <a className="rounded-pill text-off-white px-4 text-decoration-none bg-primary-brown py-3 fs-4">
                 Jelajahi Sekarang
               </a>
             </Link>

@@ -14,25 +14,25 @@ const Footer = () => {
     <footer className="bg-off-white py-4 shadow">
       <div className="container">
         <div className="d-flex justify-content-center mb-4">
-          <Image src={logo} alt="logo" />
+          <Image src={logo} alt="logo" placeholder="blur" />
         </div>
         <div className="w-75 mx-auto text-center">
-          <p className="text-secondary fs-5">
+          <p className="text-secondary-blue fs-5">
             <b>Ngawi</b>, tempat yang menjadi destinasi wisata untuk dikunjungi
             sebagai liburan. Anda dapat menemukan kulineran, liburan, hiburan,
             belanja, dan semua aktivitas lainnya tanpa perlu meninggalkan Alam.
           </p>
           <div className="d-flex justify-content-center gap-4 fs-1">
-            <a href="#" className="text-secondary">
+            <a href="#" className="text-secondary-blue">
               <i className="bi bi-facebook"></i>
             </a>
-            <a href="#" className="text-secondary">
+            <a href="#" className="text-secondary-blue">
               <i className="bi bi-twitter"></i>
             </a>
-            <a href="#" className="text-secondary">
+            <a href="#" className="text-secondary-blue">
               <i className="bi bi-instagram"></i>
             </a>
-            <a href="#" className="text-secondary">
+            <a href="#" className="text-secondary-blue">
               <i className="bi bi-github"></i>
             </a>
           </div>
@@ -96,7 +96,7 @@ const Footer = () => {
           </a>
         </div>
         <hr />
-        <div className="py-4 d-flex flex-wrap gap-4 justify-content-center text-secondary fs-5">
+        <div className="py-4 d-flex flex-wrap gap-4 justify-content-center text-secondary-blue fs-5">
           <p>© 2022 Jelajah Ngawi, Inc.</p>
           <p>Privacy</p>
           <p>Terms</p>

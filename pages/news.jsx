@@ -3,6 +3,8 @@ import Head from "next/head";
 import Navbar from "@components/Navbar";
 import Footer from "@components/Footer";
 
+import styles from "../styles/news.module.css";
+
 export default function Home() {
   return (
     <div>
@@ -30,7 +32,10 @@ export default function Home() {
             </a>
             .
           </p>
-          <div style={{ border: "2px solid black" }}>
+          <div
+            className={`bg-white ${styles.newsSpinner}`}
+            style={{ border: "2px solid black" }}
+          >
             <iframe
               src="https://kampoengngawi.com/"
               width={"100%"}

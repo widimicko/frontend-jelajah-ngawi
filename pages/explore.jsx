@@ -11,27 +11,17 @@ import Footer from "@components/Footer";
 import Category from "@components/Category";
 
 import TourismCard from "@components/TourismCard";
+import UmkmCard from "@components/UmkmCard";
+import HotelCard from "@components/HotelCard";
 
 import styles from "../styles/explore.module.css";
-import UmkmCard from "@components/UmkmCard";
 
 export default function Explore() {
-  const [data, setData] = useState(tourism);
   const [selectedCategory, setSelectedCategory] = useState(categories[0].name);
 
   const handleCategoryChange = (name) => {
     setSelectedCategory(name);
   };
-
-  useEffect(() => {
-    if (selectedCategory === "Pariwisata") {
-      setData(tourism);
-    } else if (selectedCategory === "Oleh-oleh") {
-      setData(umkm);
-    } else if (selectedCategory === "Penginapan") {
-      setData(hotel);
-    }
-  }, [selectedCategory]);
 
   return (
     <div>
@@ -78,17 +68,21 @@ export default function Explore() {
             {selectedCategory}
           </div>
           <div
-            className={`${styles.horizontalBar} bg-primary mx-auto mb-5`}
+            className={`${styles.horizontalBar} bg-primary-brown mx-auto mb-5`}
           ></div>
           <div className="container">
             <div className="d-flex flex-wrap justify-content-center gap-5">
               {selectedCategory == "Pariwisata" &&
-                data.map((item, index) => {
-                  return <TourismCard key={index} item={item} />;
+                tourism.map((tourism, index) => {
+                  return <TourismCard key={index} tourism={tourism} />;
                 })}
               {selectedCategory == "Oleh-oleh" &&
-                data.map((item, index) => {
-                  return <UmkmCard key={index} item={item} />;
+                umkm.map((umkm, index) => {
+                  return <UmkmCard key={index} umkm={umkm} />;
+                })}
+              {selectedCategory == "Penginapan" &&
+                hotel.map((hotel, index) => {
+                  return <HotelCard key={index} hotel={hotel} index={index} />;
                 })}
             </div>
           </div>
