@@ -1,0 +1,30 @@
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../public/assets/images/background/gerbang-alun-alun.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem 0;
+  height: 600px;
+}
+
+@media only screen and (max-width: 390px) {
+  .hero {
+    height: 700px;
+  }
+}
+
+.heroHeader {
+  font-weight: 600;
+  line-height: 59px;
+  letter-spacing: -0.025em;
+}
+
+.dataListHeader {
+  font-weight: 600;
+  line-height: 59px;
+}
+
+.horizontalBar {
+  height: 2px;
+  width: 50%;
+}

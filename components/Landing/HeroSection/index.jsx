@@ -27,11 +27,11 @@ const HeroSection = () => {
             <p className={styles.heroTextParagraph}>
               Apakah kamu berencana liburan untuk menikmati waktu luang Anda?
               Mencari tempat untuk menjelajah, makan, dan menikmati liburan Anda
-              bersama orang-orang terkasih? maka Ngawi menawarkan perjalanan
-              untuk anda dan mendapatkan pengalaman yang luar biasa.
+              bersama orang-orang terkasih? <b>Ngawi</b> menawarkan perjalanan
+              untuk anda dan anda akan mendapatkan pengalaman yang luar biasa.
             </p>
             <Link href="/explore">
-              <a className="rounded-pill text-off-white px-4 text-decoration-none bg-primary py-3 fs-4">
+              <a className="rounded-pill text-off-white px-4 text-decoration-none bg-primary-brown py-3 fs-4">
                 Jelajahi Sekarang
               </a>
             </Link>

@@ -12,19 +12,19 @@ body {
   box-sizing: border-box;
 }
 
-.bg-primary {
+.bg-primary-brown {
   background-color: #b8603c !important;
 }
 
-.text-primary {
+.text-primary-brown {
   color: #b8603c !important;
 }
 
-.bg-secondary {
+.bg-secondary-blue {
   background-color: #091f3f !important;
 }
 
-.text-secondary {
+.text-secondary-blue {
   color: #091f3f !important;
 }
 

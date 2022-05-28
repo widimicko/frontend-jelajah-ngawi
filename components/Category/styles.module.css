@@ -1,0 +1,12 @@
+.categoryItem {
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -0.025em;
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.selectedCategory {
+  background-color: white !important;
+  opacity: 1 !important;
+}

@@ -1,0 +1,15 @@
+.image {
+  height: 200px;
+}
+
+.nameText {
+  font-weight: 600;
+  line-height: 44px;
+}
+
+.descriptionText {
+  font-weight: 600;
+  line-height: 29px;
+}
+
+.link {}

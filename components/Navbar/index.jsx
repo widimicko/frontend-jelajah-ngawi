@@ -33,13 +33,17 @@ const Navbar = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
+        <div className="mx-auto alert alert-warning" role="alert">
+          <i className="bi bi-exclamation-octagon-fill"></i> Situs ini masih
+          dalam tahap pengembangan
+        </div>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="ms-auto navbar-nav gap-2">
             <li className="nav-item">
               <Link href={"/"}>
                 <a
                   className={`nav-link ${styles.fontNav} ${
-                    router.pathname == "/" ? "text-primary" : ""
+                    router.pathname == "/" ? "text-primary-brown" : ""
                   }`}
                 >
                   Beranda
@@ -50,7 +54,7 @@ const Navbar = () => {
               <Link href={"/news"}>
                 <a
                   className={`nav-link ${styles.fontNav} ${
-                    router.pathname == "/news" ? "text-primary" : ""
+                    router.pathname == "/news" ? "text-primary-brown" : ""
                   }`}
                 >
                   Berita
@@ -60,7 +64,7 @@ const Navbar = () => {
             <li className="nav-item">
               <Link href={"/explore"}>
                 <a
-                  className={`nav-link ${styles.fontNav} px-3 rounded-pill text-primary text-center`}
+                  className={`nav-link ${styles.fontNav} px-3 rounded-pill text-primary-brown text-center`}
                   style={{ border: "3px solid #B8603C" }}
                 >
                   Go Explore
