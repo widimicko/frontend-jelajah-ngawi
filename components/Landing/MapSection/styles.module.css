@@ -20,4 +20,7 @@
   position: absolute;
   bottom: -120px;
   left: 12%;
+  background: url('../../../public/assets/images/spinner.gif');
+  background-repeat: no-repeat;
+  background-position: center;
 }

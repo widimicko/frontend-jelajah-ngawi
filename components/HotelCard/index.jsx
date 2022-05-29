@@ -93,7 +93,7 @@ const HotelCard = ({ hotel, index }) => {
               </div>
               <p>alamat : {fullAddress}</p>
               <p>telepon : {phone}</p>
-              <p>checkin : {checkInTime}</p>
+              <p>checkin : {checkInTime ? checkInTime : "Tidak Tersedia"}</p>
               <p>rating : {rating}</p>
             </div>
           </div>

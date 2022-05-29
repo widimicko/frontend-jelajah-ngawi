@@ -1,0 +1,28 @@
+.main {
+  background: linear-gradient(180deg, #B8603C 0%, #898989 100%);
+}
+
+.contentContainer {
+  background: rgba(252, 251, 246, 0.5);
+  border-radius: 30px;
+}
+
+.header {
+  font-style: italic;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: -0.025em;
+  color: #091F3F;
+}
+
+.titleItem {
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: -0.025em;
+}
+
+.contentItem {
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.025em;
+}

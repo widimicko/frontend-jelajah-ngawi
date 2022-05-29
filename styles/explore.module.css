@@ -19,12 +19,22 @@
   letter-spacing: -0.025em;
 }
 
-.dataListHeader {
+.header {
   font-weight: 600;
   line-height: 59px;
 }
 
 .horizontalBar {
-  height: 2px;
+  height: 5px;
   width: 50%;
+}
+
+.galleryBackground {
+  background: linear-gradient(180deg, #B8603C 0%, #898989 100%);
+}
+
+.masonry {
+  display: block;
+  columns: 12rem;
+  gap: 1rem;
 }
