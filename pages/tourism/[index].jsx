@@ -43,7 +43,7 @@ const Tourism = () => {
     ticketPrice,
     image,
     imageUrls,
-  } = tourism[index];
+  } = tourism[index] ? tourism[index] : tourism[1];
 
   return (
     <div>
