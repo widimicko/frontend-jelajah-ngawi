@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { useState } from "react";
 import Head from "next/head";
 
@@ -5,6 +6,7 @@ import categories from "@data/categories";
 import tourism from "@data/tourism";
 import umkm from "@data/umkm";
 import hotel from "@data/hotel";
+import imageGallery from "@data/imageGallery";
 
 import Navbar from "@components/Navbar";
 import Footer from "@components/Footer";
@@ -65,7 +67,7 @@ export default function Explore() {
           </div>
         </div>
         <div className="bg-off-white p-5">
-          <div className={`${styles.dataListHeader} text-center fs-1`}>
+          <div className={`${styles.header} text-center fs-1`}>
             {selectedCategory}
           </div>
           <div
@@ -89,8 +91,27 @@ export default function Explore() {
                 })}
             </div>
           </div>
-          <BackToTopButton />
         </div>
+        <div className={`${styles.galleryBackground}`}>
+          <div className="container p-5" style={{ minHeight: "500px" }}>
+            <p className={`${styles.header} text-white fs-1`}>Galeri Wisata</p>
+            <div
+              className={`${styles.horizontalBar} bg-secondary-blue mb-3`}
+            ></div>
+            <div className={styles.masonry}>
+              {imageGallery.length &&
+                imageGallery.map((image, index) => (
+                  <img
+                    key={index}
+                    src={image.src}
+                    className="img-fluid mb-3"
+                    alt="image"
+                  />
+                ))}
+            </div>
+          </div>
+        </div>
+        <BackToTopButton />
       </main>
       <Footer />
     </div>
