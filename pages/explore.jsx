@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Head from "next/head";
 
 import categories from "@data/categories";
@@ -15,6 +15,7 @@ import UmkmCard from "@components/UmkmCard";
 import HotelCard from "@components/HotelCard";
 
 import styles from "../styles/explore.module.css";
+import BackToTopButton from "@components/BackToTopButton";
 
 export default function Explore() {
   const [selectedCategory, setSelectedCategory] = useState(categories[0].name);
@@ -74,7 +75,9 @@ export default function Explore() {
             <div className="d-flex flex-wrap justify-content-center gap-5">
               {selectedCategory == "Pariwisata" &&
                 tourism.map((tourism, index) => {
-                  return <TourismCard key={index} tourism={tourism} />;
+                  return (
+                    <TourismCard key={index} tourism={tourism} index={index} />
+                  );
                 })}
               {selectedCategory == "Oleh-oleh" &&
                 umkm.map((umkm, index) => {
@@ -86,6 +89,7 @@ export default function Explore() {
                 })}
             </div>
           </div>
+          <BackToTopButton />
         </div>
       </main>
       <Footer />

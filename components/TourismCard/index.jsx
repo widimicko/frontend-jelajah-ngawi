@@ -4,7 +4,7 @@ import Link from "next/link";
 import imageBaseUrl from "global/config";
 import styles from "./styles.module.css";
 
-const TourismCard = ({ tourism }) => {
+const TourismCard = ({ tourism, index }) => {
   const { name, image, description } = tourism;
 
   return (
@@ -16,9 +16,13 @@ const TourismCard = ({ tourism }) => {
       />
       <div className="card-body bg-secondary-blue">
         <div className="p-3">
-          <p className={`${styles.nameText} card-title fs-4 text-white`}>
-            {name}
-          </p>
+          <Link href={`/tourism/${index}`}>
+            <a
+              className={`${styles.nameText} text-decoration-none stretched-link card-title fs-4 text-white`}
+            >
+              {name}
+            </a>
+          </Link>
           <p className={`${styles.descriptionText} card-text text-white`}>
             {description}
           </p>

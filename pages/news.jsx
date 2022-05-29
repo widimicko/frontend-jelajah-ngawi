@@ -4,6 +4,7 @@ import Navbar from "@components/Navbar";
 import Footer from "@components/Footer";
 
 import styles from "../styles/news.module.css";
+import BackToTopButton from "@components/BackToTopButton";
 
 export default function Home() {
   return (
@@ -44,6 +45,7 @@ export default function Home() {
             ></iframe>
           </div>
         </div>
+        <BackToTopButton />
       </main>
       <Footer />
     </div>

@@ -1,12 +1,12 @@
 import Head from "next/head";
 
 import Navbar from "@components/Navbar";
-
 import HeroSection from "@components/Landing/HeroSection";
 import MapSection from "@components/Landing/MapSection";
 import DestinationSection from "@components/Landing/DestinationSection";
 import Recommendation from "@components/Landing/Recommendation";
 import Footer from "@components/Footer";
+import BackToTopButton from "@components/BackToTopButton";
 
 export default function Home() {
   return (
@@ -26,6 +26,7 @@ export default function Home() {
         <MapSection />
         <DestinationSection />
         <Recommendation />
+        <BackToTopButton />
       </main>
       <Footer />
     </div>
