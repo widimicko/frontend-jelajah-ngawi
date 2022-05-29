@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 
-import imageBaseUrl from "global/config";
+import { imageBaseUrl } from "global/config";
 import styles from "./styles.module.css";
 
 const TourismCard = ({ tourism, index }) => {
@@ -9,11 +9,11 @@ const TourismCard = ({ tourism, index }) => {
 
   return (
     <div className="card rounded shadow" style={{ width: "18rem", padding: 0 }}>
-      {/* <img
+      <img
         src={`${imageBaseUrl}tr:q-30/tourism/${image}`}
         className={`${styles.image} card-img-top`}
         alt={name}
-      /> */}
+      />
       <div className="card-body bg-secondary-blue">
         <div className="p-3">
           <Link href={`/tourism/${index}`}>
@@ -23,9 +23,9 @@ const TourismCard = ({ tourism, index }) => {
               {name}
             </a>
           </Link>
-          {/* <p className={`${styles.descriptionText} card-text text-white`}>
+          <p className={`${styles.descriptionText} card-text text-white`}>
             {description}
-          </p> */}
+          </p>
         </div>
       </div>
     </div>

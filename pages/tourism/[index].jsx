@@ -1,11 +1,25 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { init } from "shareon";
-import "shareon/css";
+import {
+  FacebookShareButton,
+  FacebookIcon,
+  PinterestShareButton,
+  PinterestIcon,
+  RedditShareButton,
+  RedditIcon,
+  WhatsappShareButton,
+  WhatsappIcon,
+  LinkedinShareButton,
+  LinkedinIcon,
+  TelegramShareButton,
+  TelegramIcon,
+  TwitterShareButton,
+  TwitterIcon,
+} from "next-share";
 
 import styles from "../../styles/tourism.module.css";
-import imageBaseUrl from "global/config";
+import { baseUrl, imageBaseUrl } from "global/config";
 import tourism from "@data/tourism";
 
 import Footer from "@components/Footer";
@@ -30,8 +44,6 @@ const Tourism = () => {
     image,
     imageUrls,
   } = tourism[index];
-
-  init();
 
   return (
     <div>
@@ -234,24 +246,29 @@ const Tourism = () => {
               </div>
               <hr />
               <div className="text-secondary-blue fs-4">
-                Bagikan Halaman Ini
-                <div className="shareon">
-                  <a className="facebook"></a>
-                  <a className="linkedin"></a>
-                  <a className="mastodon"></a>
-                  <a
-                    className="messenger"
-                    data-fb-app-id="0123456789012345"
-                  ></a>
-                  <a className="odnoklassniki"></a>
-                  <a className="pinterest"></a>
-                  <a className="pocket"></a>
-                  <a className="reddit"></a>
-                  <a className="telegram"></a>
-                  <a className="twitter"></a>
-                  <a className="viber"></a>
-                  <a className="vkontakte"></a>
-                  <a className="whatsapp"></a>
+                Bagikan Situs Ini
+                <div className="d-flex flex-wrap gap-1">
+                  <FacebookShareButton url={baseUrl}>
+                    <FacebookIcon size={40} />
+                  </FacebookShareButton>
+                  <PinterestShareButton url={baseUrl}>
+                    <PinterestIcon size={40} />
+                  </PinterestShareButton>
+                  <RedditShareButton url={baseUrl}>
+                    <RedditIcon size={40} />
+                  </RedditShareButton>
+                  <WhatsappShareButton url={baseUrl}>
+                    <WhatsappIcon size={40} />
+                  </WhatsappShareButton>
+                  <LinkedinShareButton url={baseUrl}>
+                    <LinkedinIcon size={40} />
+                  </LinkedinShareButton>
+                  <TelegramShareButton url={baseUrl}>
+                    <TelegramIcon size={40} />
+                  </TelegramShareButton>
+                  <TwitterShareButton url={baseUrl}>
+                    <TwitterIcon size={40} />
+                  </TwitterShareButton>
                 </div>
               </div>
             </div>

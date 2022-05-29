@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import imageBaseUrl from "global/config";
+import { imageBaseUrl } from "global/config";
 import styles from "./styles.module.css";
 
 const UmkmCard = ({ umkm }) => {
