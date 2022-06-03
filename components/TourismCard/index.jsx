@@ -10,7 +10,7 @@ const TourismCard = ({ tourism, index }) => {
   return (
     <div className="card rounded shadow" style={{ width: "18rem", padding: 0 }}>
       <img
-        src={`${imageBaseUrl}tr:q-30/tourism/${image}`}
+        src={`${imageBaseUrl}tr:q-20/tourism/${image}`}
         className={`${styles.image} card-img-top`}
         alt={name}
       />

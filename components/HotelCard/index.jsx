@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import { Rating } from "react-simple-star-rating";
 
 import { imageBaseUrl } from "global/config";
 import styles from "./styles.module.css";
@@ -77,9 +78,9 @@ const HotelCard = ({ hotel, index }) => {
         </div>
         <div className="col-md-8">
           <div className="card-body">
-            <h5 className="card-title text-white fs-4 mb-3">{name}</h5>
+            <h5 className="card-title text-white fs-3 mb-3">{name}</h5>
             <div className="card-text text-white">
-              <div className="d-flex justify-content-between">
+              <div className="d-flex justify-content-between fs-5">
                 <a
                   href={urlLocation}
                   className="text-danger text-decoration-none "
@@ -89,12 +90,21 @@ const HotelCard = ({ hotel, index }) => {
                   <i className="bi bi-map-fill"></i> &ensp;
                   <span className="text-white">{district}</span>
                 </a>
-                <p className="text-white">{price ? price : "Tidak Tersedia"}</p>
+                <p className="text-white">{price ?? "Tidak Tersedia"}</p>
               </div>
-              <p>alamat : {fullAddress}</p>
-              <p>telepon : {phone}</p>
-              <p>checkin : {checkInTime ? checkInTime : "Tidak Tersedia"}</p>
-              <p>rating : {rating}</p>
+              <div className="py-1 px-3">
+                <p>Alamat : {fullAddress}</p>
+                <p>Telepon : {phone ?? "Tidak Tersedia"}</p>
+                <p>Jam Checkin : {checkInTime ?? "Tidak Tersedia"}</p>
+                <Rating
+                  initialValue={rating}
+                  allowHalfIcon
+                  allowHover={false}
+                  readonly={true}
+                  size={24}
+                  showTooltip
+                />
+              </div>
             </div>
           </div>
         </div>

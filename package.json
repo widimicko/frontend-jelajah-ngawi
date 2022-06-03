@@ -16,7 +16,8 @@
     "next-share": "^0.13.0",
     "react": "18.1.0",
     "react-back-to-top-button": "^0.0.14",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "react-simple-star-rating": "^4.0.5"
   },
   "devDependencies": {
     "eslint": "8.15.0",

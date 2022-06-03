@@ -33,10 +33,6 @@ const Navbar = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="mx-auto alert alert-warning" role="alert">
-          <i className="bi bi-exclamation-octagon-fill"></i> Situs ini masih
-          dalam tahap pengembangan
-        </div>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="ms-auto navbar-nav gap-2">
             <li className="nav-item">
