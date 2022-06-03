@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import styles from "./styles.module.css";
 
@@ -25,9 +26,13 @@ const Recommendation = () => {
               className="img-fluid"
               loading="lazy"
             />
-            <div className={`${styles.itemName} fs-2 text-white`}>
-              <p>Alun-Alun Ngawi</p>
-            </div>
+            <Link href={"/tourism/11"}>
+              <a
+                className={`${styles.itemName} fs-2 text-white stretched-link text-decoration-none`}
+              >
+                Alun-Alun Ngawi
+              </a>
+            </Link>
           </div>
           <div className="col-sm-12 col-md-6 p-relative">
             <Image
@@ -37,9 +42,13 @@ const Recommendation = () => {
               className="img-fluid"
               loading="lazy"
             />
-            <div className={`${styles.itemName} fs-2 text-white`}>
-              <p>Benteng Pendem</p>
-            </div>
+            <Link href={"/tourism/0"}>
+              <a
+                className={`${styles.itemName} fs-2 text-white stretched-link text-decoration-none`}
+              >
+                Benteng Pendem
+              </a>
+            </Link>
           </div>
           <div className="col-12 col-md-6 p-relative">
             <Image
@@ -49,9 +58,13 @@ const Recommendation = () => {
               className="img-fluid"
               loading="lazy"
             />
-            <div className={`${styles.itemName} fs-2 text-white`}>
-              <p>Srambang Park</p>
-            </div>
+            <Link href={"/tourism/3"}>
+              <a
+                className={`${styles.itemName} fs-2 text-white stretched-link text-decoration-none`}
+              >
+                Srambang Park
+              </a>
+            </Link>
           </div>
           <div className="col-12 col-md-6 p-relative">
             <Image
@@ -61,9 +74,13 @@ const Recommendation = () => {
               className="img-fluid"
               loading="lazy"
             />
-            <div className={`${styles.itemName} fs-2 text-white`}>
-              <p>Kebun Teh Jamus</p>
-            </div>
+            <Link href={"/tourism/1"}>
+              <a
+                className={`${styles.itemName} fs-2 text-white stretched-link text-decoration-none`}
+              >
+                Kebun Teh Jamus
+              </a>
+            </Link>
           </div>
         </div>
       </div>
