@@ -187,7 +187,7 @@ const Tourism = () => {
                       </p>
                       <p className="text-off-white">
                         <span className={`${styles.titleItem} fs-5`}>
-                          Kecamatan
+                          Kecama tan
                         </span>
                         <br />
                         <span className={styles.contentItem}>{district}</span>

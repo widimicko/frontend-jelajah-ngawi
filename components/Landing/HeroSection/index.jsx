@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import styles from "./styles.module.css";
-import heroImage from "@assets/images/hero.png";
+import heroImage from "@assets/images/hero.webp";
 
 const HeroSection = () => {
   return (
@@ -31,7 +31,7 @@ const HeroSection = () => {
               untuk anda dan anda akan mendapatkan pengalaman yang luar biasa.
             </p>
             <Link href="/explore">
-              <a className="rounded-pill text-off-white px-4 text-decoration-none bg-primary-brown py-3 fs-4">
+              <a className="rounded-pill text-off-white text-decoration-none bg-primary-brown py-3 px-2 fs-4">
                 Jelajahi Sekarang
               </a>
             </Link>
