@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
-import { useRouter } from "next/router";
 import {
   FacebookShareButton,
   FacebookIcon,
@@ -20,16 +19,13 @@ import {
 
 import styles from "../../styles/tourism.module.css";
 import { baseUrl, imageBaseUrl } from "global/config";
-import tourism from "@data/tourism";
+// import tourism from "@data/tourism";
 
 import Footer from "@components/Footer";
 import Navbar from "@components/Navbar";
 import BackToTopButton from "@components/BackToTopButton";
 
-const Tourism = () => {
-  const router = useRouter();
-  const { index } = router.query;
-
+const Tourism = ({ tourism }) => {
   const {
     name,
     label,
@@ -43,7 +39,7 @@ const Tourism = () => {
     ticketPrice,
     image,
     imageUrls,
-  } = tourism[index] ? tourism[index] : tourism[1];
+  } = tourism;
 
   return (
     <div>
@@ -280,5 +276,23 @@ const Tourism = () => {
     </div>
   );
 };
+
+export async function getStaticPaths() {
+  const res = await fetch(`${baseUrl}/api/tourism`);
+  const tourism = await res.json();
+
+  const paths = tourism.map((tourism, index) => `/tourism/${index}`);
+
+  return { paths, fallback: false };
+}
+
+export async function getStaticProps({ params }) {
+  const res = await fetch(`${baseUrl}/api/tourism/${params.index}`);
+  const tourism = await res.json();
+
+  return {
+    props: { tourism },
+  };
+}
 
 export default Tourism;
