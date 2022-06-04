@@ -2,10 +2,9 @@
 import { useState } from "react";
 import Head from "next/head";
 
+import { baseUrl } from "global/config";
+
 import categories from "@data/categories";
-import tourism from "@data/tourism";
-import umkm from "@data/umkm";
-import hotel from "@data/hotel";
 import imageGallery from "@data/imageGallery";
 
 import Navbar from "@components/Navbar";
@@ -19,7 +18,7 @@ import HotelCard from "@components/HotelCard";
 import styles from "../styles/explore.module.css";
 import BackToTopButton from "@components/BackToTopButton";
 
-export default function Explore() {
+export default function Explore({ tourism, umkm, hotel }) {
   const [selectedCategory, setSelectedCategory] = useState(categories[0].name);
 
   const handleCategoryChange = (name) => {
@@ -81,7 +80,7 @@ export default function Explore() {
                     <TourismCard key={index} tourism={tourism} index={index} />
                   );
                 })}
-              {selectedCategory == "Oleh-oleh" &&
+              {selectedCategory == "UMKM" &&
                 umkm.map((umkm, index) => {
                   return <UmkmCard key={index} umkm={umkm} />;
                 })}
@@ -116,4 +115,23 @@ export default function Explore() {
       <Footer />
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const resTourism = await fetch(`${baseUrl}/api/tourism`);
+  const tourism = await resTourism.json();
+
+  const resUmkm = await fetch(`${baseUrl}/api/umkm`);
+  const umkm = await resUmkm.json();
+
+  const resHotel = await fetch(`${baseUrl}/api/hotel`);
+  const hotel = await resHotel.json();
+
+  return {
+    props: {
+      tourism,
+      umkm,
+      hotel,
+    },
+  };
 }

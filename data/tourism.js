@@ -17,7 +17,6 @@ const tourism = [
       "bentengpendem2.jpg",
       "bentengpendem3.jpg",
       "bentengpendem4.jpg",
-      "bentengoendem5.jpg",
     ],
   },
   {

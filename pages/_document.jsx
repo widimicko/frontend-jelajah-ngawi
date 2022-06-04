@@ -22,14 +22,8 @@ export default function Document() {
         <link
           rel="icon"
           type="image/png"
-          sizes="32x32"
-          href="/assets/icons/icon32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/assets/icons/icon16.png"
+          sizes="48x48"
+          href="assets/icons/icon48.png"
         />
         <link rel="manifest" href="/manifest.json" />
       </head>
