@@ -29,7 +29,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              https://kampoengngawi.com
+              kampoengngawi.com
             </a>
             .
           </p>
@@ -39,6 +39,7 @@ export default function Home() {
           >
             <iframe
               src="https://kampoengngawi.com/"
+              title="Berita Ngawi dari Kampoeng Ngawi"
               width={"100%"}
               height={500}
               frameBorder="0"

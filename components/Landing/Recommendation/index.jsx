@@ -3,10 +3,10 @@ import Link from "next/link";
 
 import styles from "./styles.module.css";
 
-import alunAlun from "@assets/images/alun-alun.png";
-import bentengPendem from "@assets/images/benteng-pendem.png";
-import srambang from "@assets/images/srambang.png";
-import jamus from "@assets/images/jamus.png";
+import alunAlun from "@assets/images/recommendation/alun-alun.webp";
+import bentengPendem from "@assets/images/recommendation/benteng-pendem.webp";
+import srambang from "@assets/images/recommendation/srambang.webp";
+import jamus from "@assets/images/recommendation/jamus.webp";
 
 const Recommendation = () => {
   return (

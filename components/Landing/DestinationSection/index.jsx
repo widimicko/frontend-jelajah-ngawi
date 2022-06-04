@@ -3,9 +3,9 @@ import Image from "next/image";
 
 import styles from "./styles.module.css";
 
-import tourism from "@assets/images/tourism.png";
-import umkm from "@assets/images/umkm.png";
-import hotel from "@assets/images/hotel.png";
+import tourism from "@assets/images/destination/tourism.png";
+import umkm from "@assets/images/destination/umkm.png";
+import hotel from "@assets/images/destination/hotel.png";
 import badgeDestinationCard from "@assets/images/icons/badge-destination-card.png";
 import circleChevronRight from "@assets/images/icons/circle-chevron-right.png";
 
