@@ -27,14 +27,17 @@ export default function Document() {
           href="assets/icons/icon48.png"
         />
         <link rel="manifest" href="/manifest.json" />
-        <script type="text/javascript">
-          {`
-          <script type="text/javascript">(function(c,l,a,r,i,t,y){
+        <Script
+          id="ms-clarity"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `<script type="text/javascript">(function(c,l,a,r,i,t,y){
               c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
               t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
               y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-          })(window, document, "clarity", "script", "c73rt69l50");</script>`}
-        </script>
+          })(window, document, "clarity", "script", "c73rt69l50");</script>`,
+          }}
+        />
       </head>
       <body>
         <Main />
