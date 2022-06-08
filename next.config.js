@@ -2,7 +2,7 @@
 
 const withPWA = require("next-pwa");
 
-const nextConfig = withPWA({
+const nextConfigWithPWA = withPWA({
   reactStrictMode: true,
   images: {
     domains: ["ik.imagekit.io/"],
@@ -13,4 +13,11 @@ const nextConfig = withPWA({
   },
 });
 
-module.exports = nextConfig;
+const nextConfig = {
+  reactStrictMode: true,
+  images: {
+    domains: ["ik.imagekit.io/"],
+  },
+};
+
+module.exports = nextConfigWithPWA;
