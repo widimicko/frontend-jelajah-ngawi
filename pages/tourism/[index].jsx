@@ -72,6 +72,7 @@ const Tourism = ({ tourism }) => {
                       src={`${imageBaseUrl}tr:q-70/tourism/${image}`}
                       alt={name}
                       className="img-fluid w-100"
+                      style={{ height: "20rem" }}
                     />
                   </div>
                   {imageUrls.length &&
@@ -82,6 +83,7 @@ const Tourism = ({ tourism }) => {
                             src={`${imageBaseUrl}tr:q-70/tourism/${image}`}
                             alt={name}
                             className="img-fluid w-100"
+                            style={{ height: "20rem" }}
                           />
                         </div>
                       );
